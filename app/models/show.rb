@@ -27,5 +27,4 @@ class Show < ActiveRecord::Base
     Show.pluck("name").sort
   end
   
-  
 end 
