@@ -24,7 +24,8 @@ class Show < ActiveRecord::Base
   end 
   
   def self.shows_by_alphabetical_order
-    Show.sort_by{|x| }
+    binding.pry
+    Show.sort_by{|x| x.name}
   end
   
 end 
