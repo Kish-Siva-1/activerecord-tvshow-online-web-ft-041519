@@ -24,7 +24,8 @@ class Show < ActiveRecord::Base
   end 
   
   def self.shows_by_alphabetical_order
-    Show.where("rating > 5")
+    binding.pry
+    Show.all.name
   end
   
   
