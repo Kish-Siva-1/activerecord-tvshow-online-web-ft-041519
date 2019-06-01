@@ -25,7 +25,7 @@ class Show < ActiveRecord::Base
   
   def self.shows_by_alphabetical_order
     binding.pry
-    Show.all.name
+    Show.pluck("name").sort[0]
   end
   
   
